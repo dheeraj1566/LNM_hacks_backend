@@ -1,10 +1,9 @@
 import { Router } from "express";
-import { register, fetchStudent } from "../controllers/studentController.js";
-import { fileArr } from "../middlewares/multer.js";
+import { register, fetchpatient } from "../Controllers/patientController";
 
 const patientRouter = Router();
 
 studentRouter.post("/register", fileArr, register);
-studentRouter.get("/patient/:id", fetchStudent);
+studentRouter.get("/patient/:id", fetchpatient);
 
-export default studentRouter;
+export default patientRouter;
