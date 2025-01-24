@@ -3,7 +3,7 @@ import express from "express";
 import "dotenv/config";
 import connectToDB from "./connection.js";
 
-
+const express=express(); 
 
 const PORT = 8081;
 const app = express();
